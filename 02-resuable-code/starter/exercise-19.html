@@ -11,11 +11,17 @@
     <p>Open the web inspector console to test.</p>
   </body>
   <script>
+    function getHeaderLinkMarkup (title, url) {
+      let link = getMyHeaderMarkup(title,url);
+      let header = getMyHeaderMarkup(link)
+      return `${header}`;
+    }
     function getMyLinkMarkup(title, url) {
       return `<a href="${url}">${title}</a>`;
     }
     function getMyHeaderMarkup(title) {
       return `<h1>${title}</h1>`;
     }
+    console.log(getHeaderLinkMarkup(`Geek`,`http://geek.com`));
   </script>
 </html>
