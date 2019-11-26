@@ -12,5 +12,9 @@
   </body>
   <script>
     // Place your code below this line, before the closing script tag
+    function getMyLinkMarkup(title, url) {
+      return `<a href="${url}">${title}</a>`;
+    }
+    console.log(getMyLinkMarkup(`The Geek Site`,`http://geek.com`));
   </script>
 </html>
