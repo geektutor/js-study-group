@@ -12,5 +12,15 @@
   </body>
   <script>
     // Place your code below this line, before the closing script tag
+    function login() {
+      password = prompt('Enter a password');
+      if (password == 'password'){
+        alert(`Thank you! You are logged in`);
+      }
+      else {
+        alert('Incorrect, please try again!');
+      }
+    }
+    login();
   </script>
 </html>
