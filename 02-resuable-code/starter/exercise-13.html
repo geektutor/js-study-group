@@ -11,6 +11,10 @@
     <p>Open the web inspector console to test.</p>
   </body>
   <script>
+    function init(){
+      loggedIn = getLogin();
+      console.log(loggedIn);
+    }
     function getLogin() {
       const password = prompt(`Please enter password`);
       if (password === `password`) {
@@ -21,5 +25,6 @@
         return false;
       }
     }
+    init();
   </script>
 </html>
